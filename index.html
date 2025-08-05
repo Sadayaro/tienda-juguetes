@@ -64,6 +64,7 @@
         </ul>
         <form class="d-flex">
           <a href="#login" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar Sesión</a>
+          <a href="#registro" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#registroModal">Registrarse</a>
         </form>
       </div>
     </div>
@@ -80,7 +81,57 @@
       <!-- Aquí irán tarjetas de juguetes -->
       <div class="col-md-4">
         <div class="card">
-          <img src="img/juguete1.jpg" class="card-img-top" alt="Juguete 1">
+          <img src="https://www.ocu.org/-/media/ocu/images/home/consumo%20y%20familia/bebes%20y%20ninos/juguetes-1.jpg?la=es-es&rev=90a3c8b7-a68e-4c01-9170-437ab2f379e6&hash=F882AC208E45203E464A3F0277CA211B&mw=960" class="card-img-top" alt="Juguete 1">
+          <div class="card-body">
+            <h5 class="card-title">Juguete Educativo</h5>
+            <p class="card-text">Estimula el aprendizaje desde los 3 años.</p>
+            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.ocu.org/-/media/ocu/images/home/consumo%20y%20familia/bebes%20y%20ninos/juguetes-1.jpg?la=es-es&rev=90a3c8b7-a68e-4c01-9170-437ab2f379e6&hash=F882AC208E45203E464A3F0277CA211B&mw=960" class="card-img-top" alt="Juguete 1">
+          <div class="card-body">
+            <h5 class="card-title">Juguete Educativo</h5>
+            <p class="card-text">Estimula el aprendizaje desde los 3 años.</p>
+            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.ocu.org/-/media/ocu/images/home/consumo%20y%20familia/bebes%20y%20ninos/juguetes-1.jpg?la=es-es&rev=90a3c8b7-a68e-4c01-9170-437ab2f379e6&hash=F882AC208E45203E464A3F0277CA211B&mw=960" class="card-img-top" alt="Juguete 1">
+          <div class="card-body">
+            <h5 class="card-title">Juguete Educativo</h5>
+            <p class="card-text">Estimula el aprendizaje desde los 3 años.</p>
+            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.ocu.org/-/media/ocu/images/home/consumo%20y%20familia/bebes%20y%20ninos/juguetes-1.jpg?la=es-es&rev=90a3c8b7-a68e-4c01-9170-437ab2f379e6&hash=F882AC208E45203E464A3F0277CA211B&mw=960" class="card-img-top" alt="Juguete 1">
+          <div class="card-body">
+            <h5 class="card-title">Juguete Educativo</h5>
+            <p class="card-text">Estimula el aprendizaje desde los 3 años.</p>
+            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.ocu.org/-/media/ocu/images/home/consumo%20y%20familia/bebes%20y%20ninos/juguetes-1.jpg?la=es-es&rev=90a3c8b7-a68e-4c01-9170-437ab2f379e6&hash=F882AC208E45203E464A3F0277CA211B&mw=960" class="card-img-top" alt="Juguete 1">
+          <div class="card-body">
+            <h5 class="card-title">Juguete Educativo</h5>
+            <p class="card-text">Estimula el aprendizaje desde los 3 años.</p>
+            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.ocu.org/-/media/ocu/images/home/consumo%20y%20familia/bebes%20y%20ninos/juguetes-1.jpg?la=es-es&rev=90a3c8b7-a68e-4c01-9170-437ab2f379e6&hash=F882AC208E45203E464A3F0277CA211B&mw=960" class="card-img-top" alt="Juguete 1">
           <div class="card-body">
             <h5 class="card-title">Juguete Educativo</h5>
             <p class="card-text">Estimula el aprendizaje desde los 3 años.</p>
@@ -122,11 +173,47 @@
     </div>
   </div>
 
+<!-- Modal de registro -->
+<div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form action="../php/registro.php" method="POST" class="p-4">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registroModalLabel">Registro de Usuario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <input type="hidden" name="formulario" value="usuario">
+
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre completo</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" name="correo" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="contrasena" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Registrar Usuario</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
   <!-- Bootstrap JS + Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Archivos JS de tu proyecto -->
-  <script src="ruta/archivos/ejemplo1.js"></script>
+  <!-- Archivos JS del proyecto -->
+  <script src="C:\Users\ssalg\CascadeProjects\tienda_juguetes_completo\js\validaciones.js"></script>
   <script src="ruta/archivos/ejemplo.js"></script>
   <script>
 // Validación en tiempo real del formulario de inicio de sesión
@@ -163,5 +250,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
+
+</div>
 </body>
 </html>
